@@ -42,3 +42,8 @@ set colorcolumn=78,79,80  " Screen columns that are highlighted. Useful to align
 set scrolloff=5     " Minimal number of screen lines to keep above and below the cursor
 set sidescrolloff=10    " Minimal number of screen columns to keep to the left and to the right of the cursor if 'nowrap' is set
 set sidescroll=1    " Minimal number of columns to scroll horizontally
+
+" File cleanup "
+"=============="
+" Clean trailing whitespaces when starting to write the buffer to a file
+autocmd BufWritePre * :%s/\s\+$//e

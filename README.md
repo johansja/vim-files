@@ -26,9 +26,10 @@ All the files should be put in their respective locations.
 </table>
 
 Recommended plugins
-================
+===================
 
 * [Pathogen](https://github.com/tpope/vim-pathogen)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
+* [Ubuntu fonts](http://font.ubuntu.com/)
 
 If plugins are not installed, changes has to be made to the config files.

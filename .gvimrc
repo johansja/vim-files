@@ -1,3 +1,7 @@
+" Font "
+"======"
+set guifont=Ubuntu\ Mono\ 13
+
 " Size "
 "======"
 set lines=25              " Number of lines of the Vim window.
