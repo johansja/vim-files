@@ -1,7 +1,13 @@
-" Pathogen "
-"=========="
-" Making it super easy to install plugins and runtime files
-execute pathogen#infect()
+set nocompatible    " Make Vim behave in a more useful way
+
+" Vundle "
+"========"
+filetype off        " Does not always reflect current file type.
+set rtp+=~/.vim/bundle/vundle " List of directories which will be searched for runtime files
+call vundle#rc()
+
+Bundle "altercation/vim-colors-solarized"
+Bundle "Valloric/YouCompleteMe"
 
 " General Config "
 "================"
