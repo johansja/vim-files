@@ -7,7 +7,6 @@ set rtp+=~/.vim/bundle/vundle " List of directories which will be searched for r
 call vundle#rc()
 
 Bundle "altercation/vim-colors-solarized"
-Bundle "Valloric/YouCompleteMe"
 
 " General Config "
 "================"
