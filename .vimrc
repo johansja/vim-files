@@ -17,6 +17,11 @@ set autoread        " When a file has been detected to hav been changed outside 
 set hidden          " Buffer becomes hidden when it is abandoned
 syntax on           " Syntax with this name is loaded
 
+" Searching "
+"==========="
+set ignorecase      " Ignore case in search patterns.
+set smartcase       " Override the 'ignorecase' option if the search pattern contains upper case characters.
+
 " Indentation "
 "============="
 set autoindent      " Copy indent from current line when starting a new line

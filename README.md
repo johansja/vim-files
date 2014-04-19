@@ -28,7 +28,7 @@ All the files should be put in their respective locations.
 Recommended plugins
 ===================
 
-* [Pathogen](https://github.com/tpope/vim-pathogen)
+* [Vundle](http://github.com/gmarik/Vundle.vim)
 * [Solarized](https://github.com/altercation/vim-colors-solarized)
 * [Ubuntu fonts](http://font.ubuntu.com/)
 
