@@ -3,10 +3,15 @@ set nocompatible    " Make Vim behave in a more useful way
 " Vundle "
 "========"
 filetype off        " Does not always reflect current file type.
-set rtp+=~/.vim/bundle/vundle " List of directories which will be searched for runtime files
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim " List of directories which will be searched for runtime files
+call vundle#begin()
 
-Bundle "altercation/vim-colors-solarized"
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdcommenter'
+
+call vundle#end()
+filetype plugin indent on
 
 " General Config "
 "================"
