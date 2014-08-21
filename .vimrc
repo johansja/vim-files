@@ -8,7 +8,10 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'bling/vim-bufferline'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -62,3 +65,21 @@ set sidescroll=1    " Minimal number of columns to scroll horizontally
 "=============="
 " Clean trailing whitespaces when starting to write the buffer to a file
 autocmd BufWritePre * :%s/\s\+$//e
+
+
+"========="
+" Plugins "
+"========="
+
+" NERDTree "
+"=========="
+autocmd vimenter * NERDTree   " Open NERDTree automatically when vim starts up
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let g:NERDTreeWinPos="right"  " Open NERDTree on the right
+
+" vim-airline "
+"============="
+set laststatus=2    " Statusline appears all the time
+" Automatically displays all buffers when there's only one tab open.
+let g:airline#extensions#tabline#enabled=1
