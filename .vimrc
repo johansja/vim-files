@@ -7,7 +7,6 @@ set rtp+=~/.vim/bundle/Vundle.vim " List of directories which will be searched f
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'scrooloose/nerdcommenter'
