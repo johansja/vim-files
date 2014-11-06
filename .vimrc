@@ -13,6 +13,8 @@ Plugin 'bling/vim-bufferline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'derekwyatt/vim-scala'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -70,13 +72,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 "========="
 " Plugins "
 "========="
-
-" NERDTree "
-"=========="
-autocmd vimenter * NERDTree   " Open NERDTree automatically when vim starts up
-" Close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let g:NERDTreeWinPos="right"  " Open NERDTree on the right
 
 " vim-airline "
 "============="

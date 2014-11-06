@@ -1,11 +1,7 @@
-" Font "
-"======"
-set guifont=Ubuntu\ Mono\ 13
-
 " Size "
 "======"
-set lines=25              " Number of lines of the Vim window.
-set columns=85            " Number of columns of the screen.
+set lines=40              " Number of lines of the Vim window.
+set columns=120           " Number of columns of the screen.
 
 " Appearance "
 "============"
@@ -18,3 +14,15 @@ colorscheme solarized     " Load color scheme
 " Use += to display widget
 set guioptions-=m         " Hide menu bar
 set guioptions-=T         " Hide toolbar
+
+
+"========="
+" Plugins "
+"========="
+
+" NERDTree "
+"=========="
+autocmd vimenter * NERDTree   " Open NERDTree automatically when vim starts up
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let g:NERDTreeWinPos="right"  " Open NERDTree on the right
