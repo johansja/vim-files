@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'derekwyatt/vim-scala'
+Plugin 'groenewege/vim-less'
 
 call vundle#end()
 filetype plugin indent on
