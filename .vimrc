@@ -8,15 +8,20 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'derekwyatt/vim-scala'
 Plugin 'fatih/vim-go'
 Plugin 'groenewege/vim-less'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'klen/python-mode'
 
 call vundle#end()
 filetype plugin indent on
@@ -81,3 +86,13 @@ autocmd BufWritePre * :%s/\s\+$//e
 set laststatus=2    " Statusline appears all the time
 " Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled=1
+
+" vim-go "
+"========"
+let g:go_fmt_command="goimports"
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
