@@ -24,12 +24,3 @@ All the files should be put in their respective locations.
     <td>~/vimfiles</td>
   </tr>
 </table>
-
-Recommended plugins
-===================
-
-* [Vundle](http://github.com/gmarik/Vundle.vim)
-* [Solarized](https://github.com/altercation/vim-colors-solarized)
-* [Ubuntu fonts](http://font.ubuntu.com/)
-
-If plugins are not installed, changes has to be made to the config files.
