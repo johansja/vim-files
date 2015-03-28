@@ -15,7 +15,9 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe'
+if version >= 740
+  Plugin 'Valloric/YouCompleteMe'
+endif
 
 Plugin 'derekwyatt/vim-scala'
 Plugin 'fatih/vim-go'
