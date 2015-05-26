@@ -11,16 +11,16 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
-Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-if version >= 740
+if version >= 704
   Plugin 'Valloric/YouCompleteMe'
 endif
 
 Plugin 'derekwyatt/vim-scala'
 Plugin 'fatih/vim-go'
+Plugin 'gre/play2vim'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'klen/python-mode'
@@ -70,7 +70,7 @@ set colorcolumn=78,79,80  " Screen columns that are highlighted. Useful to align
 " Scrolling "
 "==========="
 set scrolloff=5     " Minimal number of screen lines to keep above and below the cursor
-set sidescrolloff=10    " Minimal number of screen columns to keep to the left and to the right of the cursor if 'nowrap' is set
+set sidescrolloff=10      " Minimal number of screen columns to keep to the left and to the right of the cursor if 'nowrap' is set
 set sidescroll=1    " Minimal number of columns to scroll horizontally
 
 " File cleanup "

@@ -1,13 +1,12 @@
 " Size "
 "======"
-set lines=60              " Number of lines of the Vim window.
-set columns=180           " Number of columns of the screen.
+set lines=35              " Number of lines of the Vim window.
+set columns=140           " Number of columns of the screen.
 
 " Color Scheme "
 "=============="
 set background=dark           " When set to "dark", Vim will try to use colors that look good on a dark background.
-let base16colorspace=256      " Access colors present in 256 colorspace
-colorscheme base16-default    " Load color scheme.
+colorscheme solarized         " Load color scheme.
 
 " GUI Options "
 "============="
@@ -15,8 +14,6 @@ colorscheme base16-default    " Load color scheme.
 " Use += to display widget
 set guioptions-=m         " Hide menu bar
 set guioptions-=T         " Hide toolbar
-
-set guifont=Menlo\ Regular:h13
 
 
 "========="
@@ -28,7 +25,3 @@ set guifont=Menlo\ Regular:h13
 autocmd vimenter * NERDTree   " Open NERDTree automatically when vim starts up
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" tagbar "
-"========"
-autocmd vimenter * :Tagbar    " Open Tagbar automatically when vim starts up
