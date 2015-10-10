@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
+Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
@@ -26,7 +27,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'klen/python-mode'
 
 call vundle#end()
-filetype plugin indent on
 
 " General Config "
 "================"
@@ -35,6 +35,9 @@ set backspace=indent,eol,start  " Influences the working of backspace in Insert 
 set visualbell      " Use visual bell instead of beeping
 set autoread        " When a file has been detected to hav been changed outside of Vim and it has not been changed inside of Vim, automatically read it again
 set hidden          " Buffer becomes hidden when it is abandoned
+set wildmenu        " Command line completion operates in an enhanced mode.
+set showmatch       " When a bracket is inserted, briefly jump to the matching one.
+
 syntax on           " Syntax with this name is loaded
 
 " Searching "
@@ -65,7 +68,7 @@ set hlsearch        " When there is a previous search pattern, highlight all its
 "============"
 set cursorline      " Highlight the screen line of the cursor
 set cursorcolumn    " Highlight the screen column of the cursor
-set colorcolumn=78,79,80  " Screen columns that are highlighted. Useful to align text.
+set colorcolumn=79,80     " Screen columns that are highlighted. Useful to align text.
 
 " Scrolling "
 "==========="
