@@ -31,3 +31,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " tagbar "
 "========"
 autocmd vimenter * :Tagbar    " Open Tagbar automatically when vim starts up
+
+" vim-indent-guides "
+"==================="
+let g:indent_guides_enable_on_vim_startup = 1
