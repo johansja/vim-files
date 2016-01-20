@@ -18,6 +18,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'severin-lemaignan/vim-minimap'
 if v:version >= 704
   Plugin 'Valloric/YouCompleteMe'
@@ -25,12 +26,14 @@ endif
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
+Plugin 'cespare/vim-toml'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'fatih/vim-go'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'klen/python-mode'
+Plugin 'rust-lang/rust.vim'
 Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
@@ -113,14 +116,20 @@ let g:tagbar_type_ruby = {
 "============="
 set laststatus=2    " Statusline appears all the time
 " Automatically displays all buffers when there's only one tab open.
-let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#enabled = 1
 
 " vim-go "
 "========"
-let g:go_fmt_command="goimports"
+let g:go_fmt_command = "goimports"
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+" vim-indent-guides "
+"==================="
+let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'tagbar']

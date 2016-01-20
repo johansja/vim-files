@@ -1,7 +1,7 @@
 " Size "
 "======"
-set lines=55              " Number of lines of the Vim window.
-set columns=200           " Number of columns of the screen.
+set lines=40              " Number of lines of the Vim window.
+set columns=160           " Number of columns of the screen.
 
 " Color Scheme "
 "=============="
@@ -15,7 +15,7 @@ colorscheme solarized         " Load color scheme.
 set guioptions-=m         " Hide menu bar
 set guioptions-=T         " Hide toolbar
 
-set guifont=Source\ Code\ Pro:h14
+set guifont=Hack\ 10
 
 
 "========="
@@ -31,7 +31,3 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " tagbar "
 "========"
 autocmd vimenter * :Tagbar    " Open Tagbar automatically when vim starts up
-
-" vim-indent-guides "
-"==================="
-let g:indent_guides_enable_on_vim_startup = 1
