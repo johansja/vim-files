@@ -111,6 +111,23 @@ let g:tagbar_type_ruby = {
     \ 'F:singleton methods'
   \ ]
 \ }
+let g:tagbar_type_rust = {
+  \ 'ctagstype' : 'rust',
+  \ 'kinds' : [
+    \ 'T:types,type definitions',
+    \ 'f:functions,function definitions',
+    \ 'g:enum,enumeration names',
+    \ 's:structure names',
+    \ 'm:modules,module names',
+    \ 'c:consts,static constants',
+    \ 't:traits,traits',
+    \ 'i:impls,trait implementations',
+  \ ]
+\ }
+
+" rust.vim "
+"=========="
+let g:rustfmt_autosave = 1
 
 " vim-airline "
 "============="
@@ -133,3 +150,8 @@ let g:go_highlight_build_constraints = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'tagbar']
+
+" YouCompleteMe "
+"==============="
+let g:ycm_rust_src_path = '/home/johansja/Codes/Rust/rustc-1.7.0/src'
+nnoremap <Leader>] :YcmCompleter GoTo<CR>
