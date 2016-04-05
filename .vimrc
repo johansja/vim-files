@@ -10,7 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
 Plugin 'bling/vim-bufferline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'majutsushi/tagbar'
@@ -23,6 +22,8 @@ Plugin 'severin-lemaignan/vim-minimap'
 if v:version >= 704
   Plugin 'Valloric/YouCompleteMe'
 endif
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
